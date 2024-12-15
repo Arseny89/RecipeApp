@@ -1,0 +1,34 @@
+### Steps to Run the App
+
+1. Started by creating methods for defining the Endpoint (Endpoint Provider).
+2. Then created a structure for decoding data and a service for fetching and decoding it from JSON.
+3. Built the main screen with a list of recipes.
+4. Created a ViewModel for the main screen with methods for fetching data for the list.
+5. Moved the creation of the list's cell to a separate file.
+6. Developed a separate view for displaying the webpage with the recipe and/or a YouTube video using WKWebView.
+7. Created a method for saving images to the cache using NSCache.
+8. Created a ViewModel for the recipe cell and added an image loading method to it.
+
+### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
+
+Interface and visualization, Data Loading, and Caching. First and foremost, the app should be intuitive for users to navigate. Efficient use of asynchronous methods for data loading and image caching improves performance, which positively impacts the user experience.
+
+### Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
+
+The development took me approximately 8 hours. I dedicated around 2 hours each evening to the project.
+
+### Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
+
+Initially, I planned to use a simple link redirection via the Safari browser, but later I decided to open the links within the app. Although this took more time, I thought it would be more appropriate to avoid redirecting users to external apps, especially from a user experience perspective.
+I also considered implementing an embedded YouTube player within the app, but this would have significantly increased the development time.
+Additionally, I decided to focus on a simple interface rather than a complex custom design to reduce development time.
+
+### Weakest Part of the Project: What do you think is the weakest part of your project?
+
+If we talk about the project as an app for mass use, the weakest part is the lack of the ability to filter recipes and save individual recipes to favorites with the option to view them offline.
+As for the weaker parts of my code, it could be the data loading and caching, as with a large volume of data, the methods I implemented may result in reduced performance and data leakage.
+
+### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
+
+During the work on the project, I needed to search for and study additional materials, which required extra time, as I was using some methods and approaches for the first time. For example, I had previously used AsyncImage for loading images, and as far as I know, AsyncImage has its own data caching method, so I didn’t need to create my own image caching solution. Additionally, I had not previously worked on testing data loading and caching.
+In this project, my main focus was to complete all the necessary requirements outlined in the task within a relatively short time frame. If the goal had been to create the most efficient app for mass usage, I would have taken a more serious approach to the app’s design and additional features, as well as searched for more efficient memory optimization methods.

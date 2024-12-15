@@ -30,3 +30,4 @@ final class RecipeAppUITestsLaunchTests: XCTestCase {
         add(attachment)
     }
 }
+
